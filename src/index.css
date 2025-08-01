@@ -49,13 +49,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #0063FF, #14F0F0);
 }
-
-/* Spline viewer styling */
-spline-viewer {
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-spline-viewer canvas {
-  border-radius: 1rem;
-}

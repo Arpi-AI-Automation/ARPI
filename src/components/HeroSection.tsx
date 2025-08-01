@@ -55,19 +55,33 @@ const HeroSection = () => {
 
           <div className="relative">
             <div className="relative w-full h-96 lg:h-[500px] flex items-center justify-center">
-              <div className="w-full h-full max-w-lg">
-                <spline-viewer 
-                  url="https://prod.spline.design/m9ZG48hHChBVRIxG/scene.splinecode"
-                  className="w-full h-full rounded-2xl"
-                  style={{
-                    background: 'transparent',
-                    border: 'none'
-                  }}
-                />
+              {/* Floating AI Elements */}
+              <div className="relative">
+                {/* Central AI Core */}
+                <div className="w-32 h-32 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-3xl flex items-center justify-center animate-pulse shadow-2xl shadow-[#14F0F0]/25">
+                  <Bot className="w-16 h-16 text-white" />
+                </div>
+                
+                {/* Floating Cubes */}
+                <div className="absolute -top-8 -left-8 w-16 h-16 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-80 shadow-lg shadow-[#0063FF]/25"></div>
+                <div className="absolute -top-4 -right-12 w-12 h-12 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-60 shadow-lg shadow-[#14F0F0]/25"></div>
+                <div className="absolute -bottom-6 -left-12 w-20 h-20 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-70 shadow-lg shadow-[#0063FF]/25"></div>
+                <div className="absolute -bottom-8 -right-8 w-14 h-14 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-80 shadow-lg shadow-[#14F0F0]/25"></div>
+                
+                {/* Orbiting Elements */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-48 h-48 border border-[#14F0F0]/30 rounded-full animate-spin" style={{animationDuration: '20s'}}></div>
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#14F0F0] rounded-full shadow-lg shadow-[#14F0F0]/50"></div>
+                </div>
+                
+                {/* Tech Icons */}
+                <div className="absolute top-16 left-20 opacity-60">
+                  <Zap className="w-8 h-8 text-[#14F0F0] animate-pulse" />
+                </div>
+                <div className="absolute bottom-16 right-20 opacity-60">
+                  <Cpu className="w-8 h-8 text-[#0063FF] animate-pulse" style={{animationDelay: '1s'}} />
+                </div>
               </div>
-              
-              {/* Subtle glow effect behind Spline */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 rounded-3xl blur-3xl -z-10"></div>
             </div>
           </div>
         </div>
