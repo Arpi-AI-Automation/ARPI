@@ -158,10 +158,24 @@ const ContactSection = () => {
               </button>
 
               {submitStatus === 'success' && (
-                <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                  <p className="text-green-800 text-sm">
-                    Thank you! Your message has been sent successfully. We'll get back to you soon.
-                  </p>
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                  <div className="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Send className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#0B0F26] mb-4">
+                      Thank you — we've received your message!
+                    </h3>
+                    <p className="text-gray-600 mb-6">
+                      One of our automation specialists will get back to you shortly.
+                    </p>
+                    <button
+                      onClick={() => setSubmitStatus('idle')}
+                      className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300"
+                    >
+                      Close
+                    </button>
+                  </div>
                 </div>
               )}
 
