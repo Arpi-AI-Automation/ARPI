@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bot, Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Bot className="w-8 h-8 text-[#14F0F0]" />
+              <img src="/assets/logo.png" alt="ARPI AI" className="w-8 h-8" />
               <span className="text-2xl font-bold text-white">ARPI AI</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">

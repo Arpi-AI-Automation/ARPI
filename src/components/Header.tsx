@@ -1,5 +1,4 @@
 import React from 'react';
-import { Bot } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -7,7 +6,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <Bot className="w-8 h-8 text-[#14F0F0]" />
+            <img src="/assets/logo.png" alt="ARPI AI" className="w-8 h-8" />
             <span className="text-2xl font-bold text-white">ARPI AI</span>
           </div>
           
