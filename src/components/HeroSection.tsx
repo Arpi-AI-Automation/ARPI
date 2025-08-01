@@ -54,24 +54,20 @@ const HeroSection = () => {
           </div>
 
           <div className="relative">
-            <div className="flex justify-center items-center space-x-8">
-              <div className="relative">
-                <div className="w-32 h-32 bg-gradient-to-br from-[#14F0F0]/20 to-[#0063FF]/20 rounded-3xl rotate-12 animate-float">
-                  <Bot className="w-16 h-16 text-[#14F0F0] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-                </div>
+            <div className="relative w-full h-96 lg:h-[500px] flex items-center justify-center">
+              <div className="w-full h-full max-w-lg">
+                <spline-viewer 
+                  url="https://prod.spline.design/m9ZG48hHChBVRIxG/scene.splinecode"
+                  className="w-full h-full rounded-2xl"
+                  style={{
+                    background: 'transparent',
+                    border: 'none'
+                  }}
+                />
               </div>
               
-              <div className="relative">
-                <div className="w-24 h-24 bg-gradient-to-br from-[#0063FF]/20 to-[#14F0F0]/20 rounded-2xl -rotate-12 animate-float-delayed">
-                  <Zap className="w-12 h-12 text-[#0063FF] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-                </div>
-              </div>
-              
-              <div className="relative">
-                <div className="w-28 h-28 bg-gradient-to-br from-[#14F0F0]/20 to-[#0063FF]/20 rounded-2xl rotate-6 animate-float">
-                  <Cpu className="w-14 h-14 text-[#14F0F0] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-                </div>
-              </div>
+              {/* Subtle glow effect behind Spline */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 rounded-3xl blur-3xl -z-10"></div>
             </div>
           </div>
         </div>
