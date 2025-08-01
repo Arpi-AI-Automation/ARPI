@@ -21,7 +21,7 @@ const Header = () => {
               Contact
             </a>
             <button className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-2 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105">
-              Get Free Demo
+              <a href="#contact">Get Free Demo</a>
             </button>
           </nav>
         </div>

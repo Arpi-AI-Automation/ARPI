@@ -56,10 +56,10 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="group bg-transparent border-2 border-[#14F0F0] text-[#14F0F0] px-8 py-3 rounded-lg font-semibold hover:bg-[#14F0F0] hover:text-[#0B0F26] transition-all duration-300 flex items-center space-x-2 mx-auto">
+          <a href="#contact" className="group bg-transparent border-2 border-[#14F0F0] text-[#14F0F0] px-8 py-3 rounded-lg font-semibold hover:bg-[#14F0F0] hover:text-[#0B0F26] transition-all duration-300 flex items-center space-x-2 mx-auto">
             <span>See How It Works</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

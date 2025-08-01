@@ -9,10 +9,10 @@ const CTAStrip = () => {
           Let's Automate One Task For You — Free.
         </h2>
         
-        <button className="group bg-white text-[#0B0F26] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2 mx-auto mb-4">
+        <a href="#contact" className="group bg-white text-[#0B0F26] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2 mx-auto mb-4">
           <span>Get Free AI Demo</span>
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-        </button>
+        </a>
         
         <p className="text-white/90">
           We'll build a personalized AI workflow you can test before you commit.
