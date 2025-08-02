@@ -24,7 +24,7 @@ const ProofSection = () => {
   ];
 
   const techStack = [
-    'OpenAI', 'Voiceflow', 'Make.com', 'Vapi', 'Bland.AI'
+    'OpenAI', 'Voiceflow', 'Make.com', 'Vapi', 'Bland.AI', 'Convocore', 'Instantly', 'N8N', 'X.com AI Terminals', 'Airtable', 'Supabase'
   ];
 
   return (
