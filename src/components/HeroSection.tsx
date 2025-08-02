@@ -54,32 +54,63 @@ const HeroSection = () => {
           </div>
 
           <div className="relative">
+            {/* Hero Graphic - Multiple Size Variations */}
             <div className="relative w-full h-96 lg:h-[500px] flex items-center justify-center">
-              {/* Floating AI Elements */}
+              {/* Main AI Network Graphic */}
               <div className="relative">
-                {/* Central AI Core */}
-                <div className="w-32 h-32 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-3xl flex items-center justify-center animate-pulse shadow-2xl shadow-[#14F0F0]/25">
-                  <Bot className="w-16 h-16 text-white" />
+                {/* Central Hub with Bot Icon */}
+                <div className="w-40 h-40 lg:w-48 lg:h-48 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-3xl flex items-center justify-center shadow-2xl shadow-[#14F0F0]/30 animate-pulse">
+                  <Bot className="w-20 h-20 lg:w-24 lg:w-24 text-white" />
                 </div>
                 
-                {/* Floating Cubes */}
-                <div className="absolute -top-8 -left-8 w-16 h-16 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-80 shadow-lg shadow-[#0063FF]/25"></div>
-                <div className="absolute -top-4 -right-12 w-12 h-12 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-60 shadow-lg shadow-[#14F0F0]/25"></div>
-                <div className="absolute -bottom-6 -left-12 w-20 h-20 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-70 shadow-lg shadow-[#0063FF]/25"></div>
-                <div className="absolute -bottom-8 -right-8 w-14 h-14 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-80 shadow-lg shadow-[#14F0F0]/25"></div>
+                {/* Connected Network Nodes */}
+                <div className="absolute -top-12 -left-12 w-20 h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-90 shadow-xl shadow-[#0063FF]/25">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                  </div>
+                </div>
                 
-                {/* Orbiting Elements */}
+                <div className="absolute -top-8 -right-16 w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-80 shadow-lg shadow-[#14F0F0]/25">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  </div>
+                </div>
+                
+                <div className="absolute -bottom-10 -left-16 w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-85 shadow-xl shadow-[#0063FF]/25">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                  </div>
+                </div>
+                
+                <div className="absolute -bottom-12 -right-12 w-18 h-18 lg:w-22 lg:h-22 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-90 shadow-lg shadow-[#14F0F0]/25">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+                  </div>
+                </div>
+                
+                {/* Connection Lines */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-48 h-48 border border-[#14F0F0]/30 rounded-full animate-spin" style={{animationDuration: '20s'}}></div>
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#14F0F0] rounded-full shadow-lg shadow-[#14F0F0]/50"></div>
+                  <div className="w-64 h-64 lg:w-80 lg:h-80 border border-[#14F0F0]/20 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
+                  <div className="absolute w-48 h-48 lg:w-60 lg:h-60 border border-[#0063FF]/15 rounded-full animate-spin top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{animationDuration: '25s', animationDirection: 'reverse'}}></div>
                 </div>
                 
-                {/* Tech Icons */}
-                <div className="absolute top-16 left-20 opacity-60">
-                  <Zap className="w-8 h-8 text-[#14F0F0] animate-pulse" />
+                {/* Floating Data Points */}
+                <div className="absolute top-20 left-24 opacity-70">
+                  <div className="w-2 h-2 bg-[#14F0F0] rounded-full animate-pulse shadow-lg shadow-[#14F0F0]/50"></div>
                 </div>
-                <div className="absolute bottom-16 right-20 opacity-60">
-                  <Cpu className="w-8 h-8 text-[#0063FF] animate-pulse" style={{animationDelay: '1s'}} />
+                <div className="absolute bottom-20 right-28 opacity-70">
+                  <div className="w-2 h-2 bg-[#0063FF] rounded-full animate-pulse shadow-lg shadow-[#0063FF]/50" style={{animationDelay: '2s'}}></div>
+                </div>
+                <div className="absolute top-32 right-20 opacity-60">
+                  <div className="w-1 h-1 bg-[#14F0F0] rounded-full animate-pulse shadow-sm shadow-[#14F0F0]/50" style={{animationDelay: '3s'}}></div>
+                </div>
+                
+                {/* Tech Enhancement Icons */}
+                <div className="absolute top-16 left-32 opacity-50">
+                  <Zap className="w-6 h-6 lg:w-8 lg:h-8 text-[#14F0F0] animate-pulse" />
+                </div>
+                <div className="absolute bottom-16 right-32 opacity-50">
+                  <Cpu className="w-6 h-6 lg:w-8 lg:h-8 text-[#0063FF] animate-pulse" style={{animationDelay: '1s'}} />
                 </div>
               </div>
             </div>
