@@ -10,6 +10,7 @@ import CTAStrip from './components/CTAStrip';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import MethodologyPage from './components/MethodologyPage';
+import TechnologyPage from './components/TechnologyPage';
 
 const HomePage = () => (
   <>
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/methodology" element={<MethodologyPage />} />
+          <Route path="/technology" element={<TechnologyPage />} />
         </Routes>
       </div>
     </Router>
