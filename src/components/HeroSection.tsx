@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Zap, Bot, Cpu } from 'lucide-react';
+import { ArrowRight, Zap, Bot, Cpu, Brain, MessageCircle, Mic, Cog, TrendingUp, Target } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -54,63 +54,108 @@ const HeroSection = () => {
           </div>
 
           <div className="relative">
-            {/* Hero Graphic - Multiple Size Variations */}
-            <div className="relative w-full h-96 lg:h-[500px] flex items-center justify-center">
-              {/* Main AI Network Graphic */}
+            {/* New AI Automation Hero Graphic */}
+            <div className="relative w-full h-96 lg:h-[500px] flex items-center justify-center overflow-hidden">
+              {/* Central AI Brain Hub */}
               <div className="relative">
-                {/* Central Hub with Bot Icon */}
-                <div className="w-40 h-40 lg:w-48 lg:h-48 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-3xl flex items-center justify-center shadow-2xl shadow-[#14F0F0]/30 animate-pulse">
-                  <Bot className="w-20 h-20 lg:w-24 lg:w-24 text-white" />
+                {/* Main AI Core */}
+                <div className="w-32 h-32 lg:w-40 lg:h-40 bg-gradient-to-br from-[#14F0F0] via-[#0063FF] to-[#14F0F0] rounded-full flex items-center justify-center shadow-2xl shadow-[#14F0F0]/40 relative">
+                  {/* Pulsing rings */}
+                  <div className="absolute inset-0 rounded-full border-2 border-[#14F0F0]/30 animate-ping"></div>
+                  <div className="absolute inset-2 rounded-full border border-[#0063FF]/40 animate-pulse"></div>
+                  
+                  {/* Central brain icon */}
+                  <Brain className="w-16 h-16 lg:w-20 lg:h-20 text-white animate-pulse" />
                 </div>
                 
-                {/* Connected Network Nodes */}
-                <div className="absolute -top-12 -left-12 w-20 h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-90 shadow-xl shadow-[#0063FF]/25">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-                  </div>
-                </div>
-                
-                <div className="absolute -top-8 -right-16 w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-80 shadow-lg shadow-[#14F0F0]/25">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                  </div>
-                </div>
-                
-                <div className="absolute -bottom-10 -left-16 w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-2xl animate-float opacity-85 shadow-xl shadow-[#0063FF]/25">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-                  </div>
-                </div>
-                
-                <div className="absolute -bottom-12 -right-12 w-18 h-18 lg:w-22 lg:h-22 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl animate-float-delayed opacity-90 shadow-lg shadow-[#14F0F0]/25">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
-                  </div>
-                </div>
-                
-                {/* Connection Lines */}
+                {/* Orbiting AI Modules */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-64 h-64 lg:w-80 lg:h-80 border border-[#14F0F0]/20 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
-                  <div className="absolute w-48 h-48 lg:w-60 lg:h-60 border border-[#0063FF]/15 rounded-full animate-spin top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{animationDuration: '25s', animationDirection: 'reverse'}}></div>
+                  {/* Chat Module */}
+                  <div className="absolute w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl shadow-lg animate-float" style={{transform: 'rotate(0deg) translateX(80px) rotate(0deg)', transformOrigin: 'center'}}>
+                    <div className="w-full h-full flex items-center justify-center">
+                      <MessageCircle className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
+                    </div>
+                  </div>
+                  
+                  {/* Voice Module */}
+                  <div className="absolute w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-xl shadow-lg animate-float-delayed" style={{transform: 'rotate(90deg) translateX(80px) rotate(-90deg)', transformOrigin: 'center'}}>
+                    <div className="w-full h-full flex items-center justify-center">
+                      <Mic className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
+                    </div>
+                  </div>
+                  
+                  {/* Automation Module */}
+                  <div className="absolute w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-xl shadow-lg animate-float" style={{transform: 'rotate(180deg) translateX(80px) rotate(-180deg)', transformOrigin: 'center', animationDelay: '1s'}}>
+                    <div className="w-full h-full flex items-center justify-center">
+                      <Cog className="w-8 h-8 lg:w-10 lg:h-10 text-white animate-spin" style={{animationDuration: '4s'}} />
+                    </div>
+                  </div>
+                  
+                  {/* Analytics Module */}
+                  <div className="absolute w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#0063FF] to-[#14F0F0] rounded-xl shadow-lg animate-float-delayed" style={{transform: 'rotate(270deg) translateX(80px) rotate(-270deg)', transformOrigin: 'center', animationDelay: '0.5s'}}>
+                    <div className="w-full h-full flex items-center justify-center">
+                      <TrendingUp className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
+                    </div>
+                  </div>
                 </div>
                 
-                {/* Floating Data Points */}
-                <div className="absolute top-20 left-24 opacity-70">
-                  <div className="w-2 h-2 bg-[#14F0F0] rounded-full animate-pulse shadow-lg shadow-[#14F0F0]/50"></div>
+                {/* Data Flow Lines */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-40 h-40 lg:w-48 lg:h-48 border border-[#14F0F0]/30 rounded-full animate-spin" style={{animationDuration: '20s'}}></div>
+                  <div className="absolute w-32 h-32 lg:w-40 lg:h-40 border border-[#0063FF]/20 rounded-full animate-spin top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{animationDuration: '15s', animationDirection: 'reverse'}}></div>
                 </div>
-                <div className="absolute bottom-20 right-28 opacity-70">
+                
+                {/* Floating Data Particles */}
+                <div className="absolute top-16 left-20 opacity-80">
+                  <div className="w-3 h-3 bg-[#14F0F0] rounded-full animate-pulse shadow-lg shadow-[#14F0F0]/50"></div>
+                </div>
+                <div className="absolute bottom-20 right-24 opacity-70">
                   <div className="w-2 h-2 bg-[#0063FF] rounded-full animate-pulse shadow-lg shadow-[#0063FF]/50" style={{animationDelay: '2s'}}></div>
                 </div>
-                <div className="absolute top-32 right-20 opacity-60">
+                <div className="absolute top-32 right-16 opacity-60">
                   <div className="w-1 h-1 bg-[#14F0F0] rounded-full animate-pulse shadow-sm shadow-[#14F0F0]/50" style={{animationDelay: '3s'}}></div>
                 </div>
-                
-                {/* Tech Enhancement Icons */}
-                <div className="absolute top-16 left-32 opacity-50">
-                  <Zap className="w-6 h-6 lg:w-8 lg:h-8 text-[#14F0F0] animate-pulse" />
+                <div className="absolute bottom-32 left-16 opacity-75">
+                  <div className="w-2 h-2 bg-[#0063FF] rounded-full animate-pulse shadow-lg shadow-[#0063FF]/50" style={{animationDelay: '1.5s'}}></div>
                 </div>
-                <div className="absolute bottom-16 right-32 opacity-50">
-                  <Cpu className="w-6 h-6 lg:w-8 lg:h-8 text-[#0063FF] animate-pulse" style={{animationDelay: '1s'}} />
+                
+                {/* Neural Network Connections */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-30">
+                  <svg className="w-64 h-64 lg:w-80 lg:h-80" viewBox="0 0 200 200">
+                    <defs>
+                      <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#14F0F0" />
+                        <stop offset="100%" stopColor="#0063FF" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M100 50 L150 100 L100 150 L50 100 Z" fill="none" stroke="url(#connectionGradient)" strokeWidth="1" className="animate-pulse" />
+                    <path d="M100 30 L170 100 L100 170 L30 100 Z" fill="none" stroke="url(#connectionGradient)" strokeWidth="0.5" className="animate-pulse" style={{animationDelay: '1s'}} />
+                  </svg>
+                </div>
+                
+                {/* Secondary AI Nodes */}
+                <div className="absolute -top-8 -left-8 w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-[#14F0F0]/80 to-[#0063FF]/80 rounded-lg animate-float opacity-90 shadow-lg shadow-[#14F0F0]/30">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Zap className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
+                  </div>
+                </div>
+                
+                <div className="absolute -bottom-8 -right-8 w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-[#0063FF]/80 to-[#14F0F0]/80 rounded-lg animate-float-delayed opacity-90 shadow-lg shadow-[#0063FF]/30">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Cpu className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
+                  </div>
+                </div>
+                
+                <div className="absolute -top-12 -right-4 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-[#14F0F0]/70 to-[#0063FF]/70 rounded-full animate-float opacity-80 shadow-md shadow-[#14F0F0]/25">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Bot className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
+                  </div>
+                </div>
+                
+                <div className="absolute -bottom-4 -left-12 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-[#0063FF]/70 to-[#14F0F0]/70 rounded-full animate-float-delayed opacity-80 shadow-md shadow-[#0063FF]/25">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Target className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
+                  </div>
                 </div>
               </div>
             </div>
