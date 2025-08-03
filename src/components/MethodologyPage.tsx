@@ -108,7 +108,7 @@ const MethodologyPage = () => {
             Our Methodology
           </h1>
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            The <span className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] bg-clip-text text-transparent">ARPI VYPI</span> Framework
+            <span className="text-white">The</span> <span className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] bg-clip-text text-transparent">ARPI VYPI</span> <span className="text-white">Framework</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 italic">
             "Automation that feels personal. Results that scale."
