@@ -204,7 +204,7 @@ const ContactSection = () => {
               </div>
 
               <button className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105">
-                <a href="#contact">Schedule Free Demo</a>
+                <a href="https://calendly.com/arpiai-automation/30min" target="_blank" rel="noopener noreferrer">Schedule Free Demo</a>
               </button>
 
               <div className="pt-6 border-t border-gray-700">
