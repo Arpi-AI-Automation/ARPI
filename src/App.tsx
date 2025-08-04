@@ -16,6 +16,7 @@ import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
 import BlogPost1 from './components/BlogPost1';
 import BlogPost2 from './components/BlogPost2';
+import UseCasesPage from './components/UseCasesPage';
 
 const HomePage = () => (
   <>
@@ -44,6 +45,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/ai-fixes-lead-loss" element={<BlogPost1 />} />
           <Route path="/blog/ai-followups-close-deals" element={<BlogPost2 />} />
+          <Route path="/use-cases" element={<UseCasesPage />} />
         </Routes>
       </div>
     </Router>
