@@ -13,6 +13,9 @@ import MethodologyPage from './components/MethodologyPage';
 import TechnologyPage from './components/TechnologyPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import AboutPage from './components/AboutPage';
+import BlogPage from './components/BlogPage';
+import BlogPost1 from './components/BlogPost1';
+import BlogPost2 from './components/BlogPost2';
 
 const HomePage = () => (
   <>
@@ -38,6 +41,9 @@ function App() {
           <Route path="/technology" element={<TechnologyPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/ai-fixes-lead-loss" element={<BlogPost1 />} />
+          <Route path="/blog/ai-followups-close-deals" element={<BlogPost2 />} />
         </Routes>
       </div>
     </Router>
