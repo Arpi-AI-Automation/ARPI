@@ -17,6 +17,7 @@ import BlogPage from './components/BlogPage';
 import BlogPost1 from './components/BlogPost1';
 import BlogPost2 from './components/BlogPost2';
 import UseCasesPage from './components/UseCasesPage';
+import ServicesPage from './components/ServicesPage';
 
 const HomePage = () => (
   <>
@@ -46,6 +47,7 @@ function App() {
           <Route path="/blog/ai-fixes-lead-loss" element={<BlogPost1 />} />
           <Route path="/blog/ai-followups-close-deals" element={<BlogPost2 />} />
           <Route path="/use-cases" element={<UseCasesPage />} />
+          <Route path="/services" element={<ServicesPage />} />
         </Routes>
       </div>
     </Router>
