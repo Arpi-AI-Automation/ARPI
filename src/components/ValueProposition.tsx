@@ -6,7 +6,7 @@ const ValueProposition = () => {
     {
       icon: Target,
       title: 'Capture More Leads Automatically',
-      description: 'AI chatbots, voice agents & smart forms integrated with your CRM.'
+      description: 'AI chatbots, voice agents and smart forms integrated with your CRM.'
     },
     {
       icon: Clock,

@@ -17,14 +17,14 @@ const BlogPost2 = () => {
     {
       number: '2',
       title: 'Personalization at Scale',
-      description: '"Hi Sarah, here\'s the bathroom layout you asked about..." — every message feels personal.',
+      description: '"Hi Sarah, here\'s the bathroom layout you asked about..." Every message feels personal.',
       icon: MessageCircle,
       color: 'from-[#0063FF] to-[#14F0F0]'
     },
     {
       number: '3',
       title: 'Multi-Channel Engagement',
-      description: 'Email, SMS, voice reminders — AI reaches prospects where they prefer to communicate.',
+      description: 'Email, SMS, voice reminders: AI reaches prospects where they prefer to communicate.',
       icon: Mail,
       color: 'from-[#14F0F0] to-[#0063FF]'
     },
@@ -97,7 +97,7 @@ const BlogPost2 = () => {
           {/* Introduction */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-12">
             <p className="text-xl text-gray-700 leading-relaxed">
-              You did the work — the lead came in. But without consistent follow-up, that lead goes cold. 
+              You did the work, the lead came in. But without consistent follow-up, that lead goes cold. 
               <strong className="text-[#0063FF]"> Humans forget. AI doesn't.</strong>
             </p>
           </div>
@@ -123,7 +123,7 @@ const BlogPost2 = () => {
 
             <div className="mt-8 bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-2xl p-6 text-center">
               <p className="text-xl text-[#0B0F26] font-semibold">
-                Most sales happen between the 5th and 12th contact — but most humans quit after just 1-4 attempts.
+                Most sales happen between the 5th and 12th contact, but most humans quit after just 1-4 attempts.
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ const BlogPost2 = () => {
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Day 1:</strong> "Hi John, thanks for your interest in our kitchen remodeling services. I've attached some portfolio examples."</p>
                   <p><strong>Day 3:</strong> "John, I noticed you viewed our portfolio. Here are 3 similar projects we completed in your neighborhood."</p>
-                  <p><strong>Day 7:</strong> "Quick question John - what's your ideal timeline for starting your kitchen project?"</p>
+                  <p><strong>Day 7:</strong> "Quick question John, what's your ideal timeline for starting your kitchen project?"</p>
                   <p><strong>Day 14:</strong> "John, we have an opening next month. Would you like to schedule a free consultation?"</p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ const BlogPost2 = () => {
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Day 1:</strong> "Hi Sarah, I understand you're comparing options. Here's what sets our bathroom renovations apart..."</p>
                   <p><strong>Day 5:</strong> "Sarah, here's a breakdown of our process and why our clients choose quality over lowest price."</p>
-                  <p><strong>Day 10:</strong> "Sarah, we're offering a free design consultation this month. No obligation - just ideas for your space."</p>
+                  <p><strong>Day 10:</strong> "Sarah, we're offering a free design consultation this month. No obligation, just ideas for your space."</p>
                   <p><strong>Day 21:</strong> "Sarah, one of our recent clients had similar concerns about budget. Here's how we made it work..."</p>
                 </div>
               </div>
@@ -289,7 +289,7 @@ const BlogPost2 = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            What if you never had to follow up again — but closed more deals anyway?
+            What if you never had to follow up again but closed more deals anyway?
           </p>
 
           <a href="#contact" className="group bg-white text-[#0B0F26] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">

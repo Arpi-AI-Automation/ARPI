@@ -9,8 +9,8 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
-      title: 'Why Most Service Businesses Lose Leads — and How AI Fixes It',
-      excerpt: 'Your business is amazing. But if you\'re missing calls, responding late, or taking too long to follow up — you\'re leaking revenue. In this post, we break down how AI chat and voice agents solve this problem, 24/7.',
+      title: 'Why Most Service Businesses Lose Leads and How AI Fixes It',
+      excerpt: 'Your business is amazing. But if you\'re missing calls, responding late, or taking too long to follow up, you\'re leaking revenue. In this post, we break down how AI chat and voice agents solve this problem, 24/7.',
       slug: '/blog/ai-fixes-lead-loss',
       readTime: '5 min read',
       author: 'ARPI AI Team',
@@ -20,7 +20,7 @@ const BlogPage = () => {
     {
       id: 2,
       title: '5 Ways AI Follow-Ups Close More Deals Than Sales Teams',
-      excerpt: 'Follow-up is everything — but most businesses do it too late, too little, or not at all. Learn how AI systems follow up instantly, personalize the message, and close more deals — without ever forgetting.',
+      excerpt: 'Follow-up is everything, but most businesses do it too late, too little, or not at all. Learn how AI systems follow up instantly, personalize the message, and close more deals without ever forgetting.',
       slug: '/blog/ai-followups-close-deals',
       readTime: '7 min read',
       author: 'ARPI AI Team',

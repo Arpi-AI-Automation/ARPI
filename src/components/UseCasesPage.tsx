@@ -23,8 +23,8 @@ const UseCasesPage = () => {
       id: 1,
       emoji: '💼',
       title: 'Missed Calls → Booked Consults',
-      problem: 'Home remodeling companies often miss calls while on-site or after-hours — costing them high-ticket leads.',
-      solution: 'Voice AI answers missed calls in real time, gathers lead info, qualifies the project, and schedules a consultation — all while the owner is on a job or offline.',
+      problem: 'Home remodeling companies often miss calls while on-site or after-hours, costing them high-ticket leads.',
+      solution: 'Voice AI answers missed calls in real time, gathers lead info, qualifies the project, and schedules a consultation, all while the owner is on a job or offline.',
       outcomes: [
         'Fewer lost leads',
         'Booked calls 24/7',
@@ -40,7 +40,7 @@ const UseCasesPage = () => {
       emoji: '💬',
       title: 'Website Visitors → Qualified Leads',
       problem: 'Visitors come to the website, but the contact form is slow and generic. Many bounce or never hear back.',
-      solution: 'An embedded AI chatbot greets visitors, asks tailored questions about their project, and captures contact info — instantly notifying the team and starting the sales process.',
+      solution: 'An embedded AI chatbot greets visitors, asks tailored questions about their project, and captures contact info, instantly notifying the team and starting the sales process.',
       outcomes: [
         'Higher lead capture rate',
         'Better qualification',
@@ -55,8 +55,8 @@ const UseCasesPage = () => {
       id: 3,
       emoji: '🧠',
       title: 'Follow-Ups Done Automatically',
-      problem: 'After quoting a project, many business owners forget to follow up — or don\'t follow up enough to close.',
-      solution: 'Smart follow-up sequences via SMS, email, or voice reminders keep leads warm, check in, and re-engage them — automatically.',
+      problem: 'After quoting a project, many business owners forget to follow up or don\'t follow up enough to close.',
+      solution: 'Smart follow-up sequences via SMS, email, or voice reminders keep leads warm, check in, and re-engage them automatically.',
       outcomes: [
         'No leads go cold',
         'Increased close rate',
@@ -72,7 +72,7 @@ const UseCasesPage = () => {
       emoji: '📈',
       title: 'Scaling Without Hiring',
       problem: 'The business wants to scale, but can\'t afford or manage a larger team.',
-      solution: 'AI systems handle the heavy lifting: intake, qualification, communication, scheduling, and even nurturing — without needing to expand headcount.',
+      solution: 'AI systems handle the heavy lifting: intake, qualification, communication, scheduling, and even nurturing without needing to expand headcount.',
       outcomes: [
         'More leads handled',
         'No extra salaries',
@@ -87,7 +87,7 @@ const UseCasesPage = () => {
       id: 5,
       emoji: '🔁',
       title: 'Re-Engaging Old or Cold Leads',
-      problem: 'Old leads from 3 months ago are just sitting in a spreadsheet or CRM — forgotten.',
+      problem: 'Old leads from 3 months ago are just sitting in a spreadsheet or CRM, forgotten.',
       solution: 'Voice or SMS AI campaigns reach out with a warm re-engagement message. Leads that respond are qualified and booked.',
       outcomes: [
         'New revenue from old data',

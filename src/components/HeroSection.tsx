@@ -21,7 +21,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              We build smart AI systems to automate your calls, chats, emails, and lead capture — 
+              We build smart AI systems to automate your calls, chats, emails, and lead capture, 
               so you can grow without burnout.
             </p>
 

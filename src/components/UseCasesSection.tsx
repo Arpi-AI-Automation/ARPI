@@ -28,7 +28,7 @@ const UseCasesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#0B0F26] mb-4">
-            Perfect for Clinics, Contractors & E-Commerce Brands
+            Perfect for Clinics, Contractors and E-Commerce Brands
           </h2>
         </div>
 

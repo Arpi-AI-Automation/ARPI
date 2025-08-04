@@ -25,7 +25,7 @@ const MethodologyPage = () => {
     {
       letter: 'A',
       title: 'Automate',
-      description: 'We identify the repetitive, painful tasks in your client journey — from intake to follow-up — and build smart flows to handle them for you.',
+      description: 'We identify the repetitive, painful tasks in your client journey, from intake to follow-up, and build smart flows to handle them for you.',
       icon: Cog,
       color: 'from-[#14F0F0] to-[#0063FF]'
     },
@@ -39,7 +39,7 @@ const MethodologyPage = () => {
     {
       letter: 'P',
       title: 'Profit',
-      description: 'When you respond faster, qualify better, and convert more leads — you make more money with less effort.',
+      description: 'When you respond faster, qualify better, and convert more leads, you make more money with less effort.',
       icon: TrendingUp,
       color: 'from-[#14F0F0] to-[#0063FF]'
     },
@@ -56,7 +56,7 @@ const MethodologyPage = () => {
     {
       letter: 'V',
       title: 'Voice',
-      description: 'Missed a call? VYPI answers, qualifies, and books the lead — all in real time.',
+      description: 'Missed a call? VYPI answers, qualifies, and books the lead, all in real time.',
       icon: Mic,
       color: 'from-[#14F0F0] to-[#0063FF]'
     },
@@ -131,7 +131,7 @@ const MethodologyPage = () => {
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              At ARPI.AI, we've developed a powerful two-part system designed to help service businesses — especially high-end home renovation companies — turn missed leads and slow responses into booked projects.
+              At ARPI.AI, we've developed a powerful two-part system designed to help service businesses, especially high-end home renovation companies, turn missed leads and slow responses into booked projects.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               It's called the <strong className="text-[#0063FF]">ARPI VYPI Methodology</strong>, and it's built for one purpose:
@@ -262,7 +262,7 @@ const MethodologyPage = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Let us show you what ARPI VYPI looks like — on your website, with your brand, for your clients.
+            Let us show you what ARPI VYPI looks like: on your website, with your brand, for your clients.
           </p>
           
           <div className="bg-white/10 rounded-2xl p-8 mb-8 backdrop-blur-sm">

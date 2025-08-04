@@ -26,19 +26,19 @@ const ServicesPage = () => {
   const conversationalServices = [
     {
       title: 'Voice AI Assistants',
-      description: '24/7 voicebots that answer missed calls, qualify leads, and book appointments — even while you\'re on-site or offline.',
+      description: '24/7 voicebots that answer missed calls, qualify leads, and book appointments even while you\'re on-site or offline.',
       icon: Phone,
       gradient: 'from-[#14F0F0] to-[#0063FF]'
     },
     {
       title: 'AI Chatbots (Web + SMS)',
-      description: 'Smart, branded chatbots that live on your website, social media, or texting channels — guiding visitors from curiosity to consultation.',
+      description: 'Smart, branded chatbots that live on your website, social media, or texting channels, guiding visitors from curiosity to consultation.',
       icon: MessageCircle,
       gradient: 'from-[#0063FF] to-[#14F0F0]'
     },
     {
       title: 'Follow-Up Automations',
-      description: 'Automated SMS, email, and voice follow-ups that keep leads warm, nudge cold ones, and close deals — all hands-free.',
+      description: 'Automated SMS, email, and voice follow-ups that keep leads warm, nudge cold ones, and close deals, all hands-free.',
       icon: RefreshCw,
       gradient: 'from-[#14F0F0] to-[#0063FF]'
     }
@@ -68,7 +68,7 @@ const ServicesPage = () => {
   const demoServices = [
     {
       title: 'AI-Powered Landing Pages',
-      description: 'Custom-built landing pages with embedded voice/chat AI — designed for high conversion and lead quality.',
+      description: 'Custom-built landing pages with embedded voice/chat AI, designed for high conversion and lead quality.',
       icon: Globe,
       gradient: 'from-[#14F0F0] to-[#0063FF]'
     },
@@ -89,7 +89,7 @@ const ServicesPage = () => {
   const strategyServices = [
     {
       title: 'AI Strategy Consulting',
-      description: 'We help you map where automation fits your business — and build the blueprint for growth.',
+      description: 'We help you map where automation fits your business and build the blueprint for growth.',
       icon: Brain,
       gradient: 'from-[#0063FF] to-[#14F0F0]'
     },
@@ -101,7 +101,7 @@ const ServicesPage = () => {
     },
     {
       title: 'End-to-End Implementation',
-      description: 'We handle setup, testing, revisions, integrations, and launch — so you don\'t need to worry about the tech.',
+      description: 'We handle setup, testing, revisions, integrations, and launch so you don\'t need to worry about the tech.',
       icon: Zap,
       gradient: 'from-[#0063FF] to-[#14F0F0]'
     }
@@ -299,7 +299,7 @@ const ServicesPage = () => {
 
           <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-2xl p-8 mb-8">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Whether you're a remodeler, a wellness clinic, a consultant, or a real estate firm — if you rely on leads, we can automate your growth engine.
+              Whether you're a remodeler, a wellness clinic, a consultant, or a real estate firm, if you rely on leads, we can automate your growth engine.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               We combine voice, chat, AI logic, CRM sync, and landing pages into one simple, powerful system: the <strong className="text-[#0063FF]">ARPI VYPI Methodology</strong>, powered by <strong className="text-[#14F0F0]">Mojsej Technology</strong>.
@@ -329,7 +329,7 @@ const ServicesPage = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Let's create a live demo — using your brand, your voice, and your goals.
+            Let's create a live demo using your brand, your voice, and your goals.
           </p>
           
           <div className="bg-white/10 rounded-2xl p-8 mb-8 backdrop-blur-sm">

@@ -121,7 +121,7 @@ const TechnologyPage = () => {
           </h1>
           
           <p className="text-2xl lg:text-3xl text-gray-300 mb-8">
-            It's not just AI. It's <span className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] bg-clip-text text-transparent font-bold">m.o.j.s.e.j.</span> — intelligent, personal, and always evolving.
+            It's not just AI. It's <span className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] bg-clip-text text-transparent font-bold">m.o.j.s.e.j.</span>: intelligent, personal, and always evolving.
           </p>
           
           <a href="#contact" className="group bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">
@@ -145,15 +145,15 @@ const TechnologyPage = () => {
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Mojsej is ARPI.AI's proprietary automation engine — the intelligent brain behind every chatbot, voice AI system, and automated workflow we build for our clients.
+              Mojsej is ARPI.AI's proprietary automation engine: the intelligent brain behind every chatbot, voice AI system, and automated workflow we build for our clients.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Unlike generic automation tools, Mojsej is designed to handle lead engagement, qualification, and conversion with the nuance and intelligence of a skilled sales professional — but operating 24/7 without breaks, sick days, or inconsistency.
+              Unlike generic automation tools, Mojsej is designed to handle lead engagement, qualification, and conversion with the nuance and intelligence of a skilled sales professional, but operating 24/7 without breaks, sick days, or inconsistency.
             </p>
             <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border-l-4 border-[#14F0F0] p-6 rounded-r-lg">
               <p className="text-xl font-semibold text-[#0B0F26] flex items-center">
                 <Zap className="w-6 h-6 mr-3 text-[#14F0F0]" />
-                It's automation that thinks, adapts, and improves — just like your best team member would.
+                It's automation that thinks, adapts, and improves, just like your best team member would.
               </p>
             </div>
           </div>
@@ -215,7 +215,7 @@ const TechnologyPage = () => {
               Most automation feels cold, rigid, and obviously robotic. Prospects can tell immediately when they're talking to a basic chatbot or hearing a generic voice recording.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong className="text-[#0063FF]">Mojsej is different.</strong> It learns from every interaction, adapts to context, and makes intelligent decisions like a skilled assistant or salesperson would — but it does this instantly, 24/7, without ever getting tired or inconsistent.
+              <strong className="text-[#0063FF]">Mojsej is different.</strong> It learns from every interaction, adapts to context, and makes intelligent decisions like a skilled assistant or salesperson would, but it does this instantly, 24/7, without ever getting tired or inconsistent.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-lg p-6">
@@ -264,7 +264,7 @@ const TechnologyPage = () => {
 
           <div className="mt-12 bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-2xl p-8">
             <p className="text-xl text-white text-center">
-              <strong>Mojsej runs the full lifecycle of automation</strong> — from the first website interaction to the final project booking, ensuring every touchpoint is intelligent, personalized, and optimized for conversion.
+              <strong>Mojsej runs the full lifecycle of automation</strong>: from the first website interaction to the final project booking, ensuring every touchpoint is intelligent, personalized, and optimized for conversion.
             </p>
           </div>
         </div>
@@ -342,7 +342,7 @@ const TechnologyPage = () => {
 
           <div className="bg-gradient-to-br from-[#1a1f3a] to-[#0B0F26] border border-[#14F0F0]/20 rounded-2xl p-8">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Mojsej doesn't just run your automation — it continuously improves it. Using behavioral data and interaction patterns, it acts like an AI strategist working in the background to optimize your results.
+              Mojsej doesn't just run your automation, it continuously improves it. Using behavioral data and interaction patterns, it acts like an AI strategist working in the background to optimize your results.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6">
@@ -375,7 +375,7 @@ const TechnologyPage = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            We'll build you a free live demo — personalized to your company, location, and goals. 
+            We'll build you a free live demo, personalized to your company, location, and goals. 
             See exactly how Mojsej technology can transform your lead capture and conversion process.
           </p>
           

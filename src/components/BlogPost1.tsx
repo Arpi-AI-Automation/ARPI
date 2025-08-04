@@ -75,7 +75,7 @@ const BlogPost1 = () => {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              Why Most Service Businesses Lose Leads — and How AI Fixes It
+              Why Most Service Businesses Lose Leads and How AI Fixes It
             </h1>
             
             <div className="w-20 h-1 bg-gradient-to-r from-[#14F0F0] to-[#0063FF] mx-auto"></div>
@@ -90,7 +90,7 @@ const BlogPost1 = () => {
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 mb-12">
             <p className="text-xl text-gray-700 leading-relaxed">
               Missed calls, unanswered contact forms, and late replies are the silent killers of growth. 
-              Most service businesses don't have a lead problem — they have a <strong className="text-[#0063FF]">response problem</strong>.
+              Most service businesses don't have a lead problem, they have a <strong className="text-[#0063FF]">response problem</strong>.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ const BlogPost1 = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold text-[#0B0F26] mb-2">After-Hours Inquiries Go Unanswered</h4>
-                  <p className="text-gray-700">Your best prospects often research and reach out evenings and weekends — when you're not available.</p>
+                  <p className="text-gray-700">Your best prospects often research and reach out evenings and weekends when you're not available.</p>
                 </div>
               </div>
 
@@ -140,7 +140,7 @@ const BlogPost1 = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold text-[#0B0F26] mb-2">Staff Is Too Busy Doing Real Work</h4>
-                  <p className="text-gray-700">Your team is focused on delivering excellent service to existing clients — not monitoring contact forms.</p>
+                  <p className="text-gray-700">Your team is focused on delivering excellent service to existing clients, not monitoring contact forms.</p>
                 </div>
               </div>
 
@@ -150,7 +150,7 @@ const BlogPost1 = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold text-[#0B0F26] mb-2">Manual Processes Create Delays</h4>
-                  <p className="text-gray-700">By the time you see the inquiry, respond, and try to schedule — the prospect has already moved on.</p>
+                  <p className="text-gray-700">By the time you see the inquiry, respond, and try to schedule, the prospect has already moved on.</p>
                 </div>
               </div>
             </div>
@@ -254,7 +254,7 @@ const BlogPost1 = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Ready to stop losing leads and start converting more — without lifting a finger?
+            Ready to stop losing leads and start converting more without lifting a finger?
           </p>
 
           <a href="#contact" className="group bg-white text-[#0B0F26] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">

@@ -98,12 +98,12 @@ const AboutPage = () => {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-            ARPI.AI is a team of builders, strategists, and engineers who believe service businesses deserve better tools — ones that close leads, not just capture them.
+            ARPI.AI is a team of builders, strategists, and engineers who believe service businesses deserve better tools: ones that close leads, not just capture them.
           </p>
           
           <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-2xl p-8 backdrop-blur-sm">
             <p className="text-2xl text-white font-semibold">
-              "We build AI that closes clients — while you sleep."
+              "We build AI that closes clients while you sleep."
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ const AboutPage = () => {
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              ARPI was founded to empower time-strapped business owners — starting with high-end remodelers — to stop losing leads and scale their operations without hiring more staff or chasing down every contact form submission manually.
+              ARPI was founded to empower time-strapped business owners, starting with high-end remodelers, to stop losing leads and scale their operations without hiring more staff or chasing down every contact form submission manually.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               We know you're good at delivering exceptional service. You shouldn't have to become a full-time salesperson just to keep your pipeline full.
@@ -131,7 +131,7 @@ const AboutPage = () => {
             <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border-l-4 border-[#14F0F0] p-6 rounded-r-lg">
               <p className="text-xl font-semibold text-[#0B0F26] flex items-center">
                 <Lightbulb className="w-6 h-6 mr-3 text-[#14F0F0]" />
-                ARPI was created for people who are masters of their craft — not lead chasers.
+                ARPI was created for people who are masters of their craft, not lead chasers.
               </p>
             </div>
           </div>
@@ -189,11 +189,11 @@ const AboutPage = () => {
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Mojsej Technology is the intelligent engine that drives ARPI's automation. It's not just another chatbot platform — it's a sophisticated system that thinks, adapts, and performs.
+              Mojsej Technology is the intelligent engine that drives ARPI's automation. It's not just another chatbot platform, it's a sophisticated system that thinks, adapts, and performs.
             </p>
             <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-lg p-6 mb-6">
               <p className="text-xl text-[#0B0F26] font-semibold text-center">
-                "It models smart engagement, filters qualified leads, and guides conversations with real judgment — just like your best salesperson would."
+                "It models smart engagement, filters qualified leads, and guides conversations with real judgment, just like your best salesperson would."
               </p>
             </div>
             <div className="text-center">
@@ -220,7 +220,7 @@ const AboutPage = () => {
 
           <div className="bg-gradient-to-br from-[#1a1f3a] to-[#0B0F26] border border-[#14F0F0]/20 rounded-2xl p-8">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              ARPI VYPI is the proven process that every client goes through — from initial system design to AI assistant execution.
+              ARPI VYPI is the proven process that every client goes through: from initial system design to AI assistant execution.
             </p>
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -236,7 +236,7 @@ const AboutPage = () => {
 
             <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-lg p-6 mb-6">
               <p className="text-xl text-white font-semibold text-center">
-                "We don't just give you a chatbot. We give you an engine that captures, qualifies, and converts — end to end."
+                "We don't just give you a chatbot. We give you an engine that captures, qualifies, and converts, end to end."
               </p>
             </div>
 
@@ -309,7 +309,7 @@ const AboutPage = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            We'll build you a live demo — using your brand, your services, and your city.
+            We'll build you a live demo using your brand, your services, and your city.
           </p>
           
           <div className="bg-white/10 rounded-2xl p-8 mb-8 backdrop-blur-sm">
