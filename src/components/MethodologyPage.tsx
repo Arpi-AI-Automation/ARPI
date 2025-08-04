@@ -273,7 +273,7 @@ const MethodologyPage = () => {
             </p>
           </div>
 
-          <a href="#contact" className="group bg-white text-[#0B0F26] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">
+          <a href="/#contact" className="group bg-white text-[#0B0F26] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">
             <span>Request Your Free Demo Now</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
