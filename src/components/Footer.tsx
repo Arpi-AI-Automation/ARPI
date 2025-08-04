@@ -2,6 +2,17 @@ import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
+  const handleMailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <footer className="bg-[#0B0F26] border-t border-[#14F0F0]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -16,11 +27,22 @@ const Footer = () => {
               and help you grow without burnout.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-[#14F0F0]/10 rounded-lg flex items-center justify-center hover:bg-[#14F0F0]/20 transition-colors">
-                <Linkedin className="w-5 h-5 text-[#14F0F0]" />
+              <a 
+                href="https://www.linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visit ARPI AI on LinkedIn"
+                className="w-12 h-12 bg-gradient-to-br from-[#14F0F0]/20 to-[#0063FF]/20 border border-[#14F0F0]/30 rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-[#14F0F0]/30 hover:to-[#0063FF]/30 hover:border-[#14F0F0]/50 transition-all duration-300 transform hover:scale-105"
+              >
+                <Linkedin className="w-6 h-6 text-[#14F0F0]" />
               </a>
-              <a href="#" className="w-10 h-10 bg-[#14F0F0]/10 rounded-lg flex items-center justify-center hover:bg-[#14F0F0]/20 transition-colors">
-                <Mail className="w-5 h-5 text-[#14F0F0]" />
+              <a 
+                href="#contact"
+                onClick={handleMailClick}
+                aria-label="Contact us - scroll to contact form"
+                className="w-12 h-12 bg-gradient-to-br from-[#14F0F0]/20 to-[#0063FF]/20 border border-[#14F0F0]/30 rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-[#14F0F0]/30 hover:to-[#0063FF]/30 hover:border-[#14F0F0]/50 transition-all duration-300 transform hover:scale-105"
+              >
+                <Mail className="w-6 h-6 text-[#14F0F0]" />
               </a>
             </div>
           </div>
