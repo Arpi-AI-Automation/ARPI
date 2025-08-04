@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { Send, Calendar } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
-const ContactSection = () => {
+interface ContactSectionProps {
+  id?: string;
+}
+
+const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -61,7 +65,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id={id} className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#0B0F26] mb-4">
