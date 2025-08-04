@@ -18,6 +18,7 @@ import {
   Cog
 } from 'lucide-react';
 import Header from './Header';
+import ContactSection from './ContactSection';
 import Footer from './Footer';
 
 const TechnologyPage = () => {
@@ -409,6 +410,7 @@ const TechnologyPage = () => {
         </div>
       </section>
 
+      <ContactSection />
       <Footer />
     </div>
   );

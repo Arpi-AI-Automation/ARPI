@@ -17,6 +17,7 @@ import {
   Phone
 } from 'lucide-react';
 import Header from './Header';
+import ContactSection from './ContactSection';
 import Footer from './Footer';
 
 const MethodologyPage = () => {
@@ -280,6 +281,7 @@ const MethodologyPage = () => {
         </div>
       </section>
 
+      <ContactSection />
       <Footer />
     </div>
   );
