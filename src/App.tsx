@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import HeroDemo from './components/HeroDemo';
+import HeroSection from './components/HeroSection';
 import ValueProposition from './components/ValueProposition';
 import ServicesSection from './components/ServicesSection';
 import UseCasesSection from './components/UseCasesSection';
@@ -20,7 +20,7 @@ import BlogPost2 from './components/BlogPost2';
 const HomePage = () => (
   <>
     <Header />
-    <HeroDemo />
+    <HeroSection />
     <ValueProposition />
     <ServicesSection />
     <UseCasesSection />
