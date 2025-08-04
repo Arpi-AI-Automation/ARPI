@@ -161,7 +161,7 @@ const PrivacyPolicyPage = () => {
           </ul>
           <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border-l-4 border-[#14F0F0] p-4 rounded-r-lg mt-4">
             <p className="text-[#0B0F26] font-semibold">
-              To exercise any of these rights, email us at: <a href="mailto:privacy@arpi.ai" className="text-[#0063FF] hover:underline">privacy@arpi.ai</a>
+              To exercise any of these rights, email us at: <a href="mailto:ai@arpiai.com" className="text-[#0063FF] hover:underline">ai@arpiai.com</a>
             </p>
           </div>
         </div>
@@ -260,7 +260,7 @@ const PrivacyPolicyPage = () => {
           </p>
           
           <p className="text-sm text-gray-400">
-            Last Updated: January 2025
+            Last Updated: August 2025
           </p>
         </div>
       </section>
