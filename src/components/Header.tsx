@@ -29,8 +29,15 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Prevent event bubbling and ensure immediate response
-  const handleMobileMenuToggle = (e: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => {
+  // Optimized touch event handler for immediate response
+  const handleMobileMenuToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Dedicated touch handler for mobile devices
+  const handleTouchStart = (e: React.TouchEvent<HTMLButtonElement>) => {
     e.preventDefault();
     e.stopPropagation();
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -126,12 +133,18 @@ const Header = () => {
           <div className="md:hidden mobile-menu-container">
             <button
               onClick={handleMobileMenuToggle}
-              onTouchStart={handleMobileMenuToggle}
-              className="text-white p-3 rounded-lg hover:bg-[#14F0F0]/20 active:bg-[#14F0F0]/30 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation"
+              onTouchStart={handleTouchStart}
+              className="text-white p-3 rounded-lg hover:bg-[#14F0F0]/20 active:bg-[#14F0F0]/30 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation select-none"
               aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
               type="button"
+              style={{ 
+                WebkitTapHighlightColor: 'transparent',
+                WebkitTouchCallout: 'none',
+                WebkitUserSelect: 'none',
+                touchAction: 'manipulation'
+              }}
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -146,7 +159,14 @@ const Header = () => {
                 className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
                 style={{ top: '72px' }} // Account for header height
                 aria-hidden="true"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onTouchStart={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                }}
               />
             )}
 
@@ -167,9 +187,14 @@ const Header = () => {
                       <a
                         key={index}
                         href={item.href}
-                        className="block text-lg text-gray-300 hover:text-[#14F0F0] active:text-[#14F0F0] transition-colors py-3 px-2 border-b border-gray-700/50 min-h-[44px] flex items-center touch-manipulation"
+                        className="block text-lg text-gray-300 hover:text-[#14F0F0] active:text-[#14F0F0] transition-colors py-3 px-2 border-b border-gray-700/50 min-h-[44px] flex items-center touch-manipulation select-none"
                         onClick={handleContactClick}
+                        onTouchStart={handleContactClick}
                         tabIndex={isMobileMenuOpen ? 0 : -1}
+                        style={{ 
+                          WebkitTapHighlightColor: 'transparent',
+                          touchAction: 'manipulation'
+                        }}
                       >
                         {item.label}
                       </a>
@@ -177,9 +202,14 @@ const Header = () => {
                       <Link
                         key={index}
                         to={item.to!}
-                        className="block text-lg text-gray-300 hover:text-[#14F0F0] active:text-[#14F0F0] transition-colors py-3 px-2 border-b border-gray-700/50 min-h-[44px] flex items-center touch-manipulation"
+                        className="block text-lg text-gray-300 hover:text-[#14F0F0] active:text-[#14F0F0] transition-colors py-3 px-2 border-b border-gray-700/50 min-h-[44px] flex items-center touch-manipulation select-none"
                         onClick={handleNavClick}
+                        onTouchStart={handleNavClick}
                         tabIndex={isMobileMenuOpen ? 0 : -1}
+                        style={{ 
+                          WebkitTapHighlightColor: 'transparent',
+                          touchAction: 'manipulation'
+                        }}
                       >
                         {item.label}
                       </Link>
@@ -189,9 +219,14 @@ const Header = () => {
 
                 {/* Mobile CTA Button */}
                 <button
-                  className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-4 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] active:scale-95 transition-all duration-300 mt-6 min-h-[44px] touch-manipulation"
+                  className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-4 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] active:scale-95 transition-all duration-300 mt-6 min-h-[44px] touch-manipulation select-none"
                   onClick={handleContactClick}
+                  onTouchStart={handleContactClick}
                   tabIndex={isMobileMenuOpen ? 0 : -1}
+                  style={{ 
+                    WebkitTapHighlightColor: 'transparent',
+                    touchAction: 'manipulation'
+                  }}
                 >
                   Get Free Demo
                 </button>
