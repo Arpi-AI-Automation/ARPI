@@ -11,6 +11,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import MethodologyPage from './components/MethodologyPage';
 import TechnologyPage from './components/TechnologyPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 
 const HomePage = () => (
   <>
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/methodology" element={<MethodologyPage />} />
           <Route path="/technology" element={<TechnologyPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         </Routes>
       </div>
     </Router>
