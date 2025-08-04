@@ -29,6 +29,13 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Prevent event bubbling and ensure immediate response
+  const handleMobileMenuToggle = (e: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   // Close mobile menu when clicking outside or on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -118,11 +125,13 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden mobile-menu-container">
             <button
-              onClick={toggleMobileMenu}
-              className="text-white p-2 rounded-lg hover:bg-[#14F0F0]/20 transition-colors"
+              onClick={handleMobileMenuToggle}
+              onTouchStart={handleMobileMenuToggle}
+              className="text-white p-3 rounded-lg hover:bg-[#14F0F0]/20 active:bg-[#14F0F0]/30 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation"
               aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
+              type="button"
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -134,16 +143,17 @@ const Header = () => {
             {/* Mobile Menu Overlay */}
             {isMobileMenuOpen && (
               <div 
-                className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+                className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
                 style={{ top: '72px' }} // Account for header height
                 aria-hidden="true"
+                onClick={() => setIsMobileMenuOpen(false)}
               />
             )}
 
             {/* Mobile Menu */}
             <div
               id="mobile-menu"
-              className={`fixed top-[72px] right-0 w-80 max-w-[90vw] h-[calc(100vh-72px)] bg-[#0B0F26] border-l border-[#14F0F0]/20 transform transition-transform duration-300 ease-in-out ${
+              className={`fixed top-[72px] right-0 w-80 max-w-[90vw] h-[calc(100vh-72px)] bg-[#0B0F26] border-l border-[#14F0F0]/20 transform transition-transform duration-300 ease-in-out z-50 ${
                 isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
               }`}
               role="navigation"
@@ -157,7 +167,7 @@ const Header = () => {
                       <a
                         key={index}
                         href={item.href}
-                        className="block text-lg text-gray-300 hover:text-[#14F0F0] transition-colors py-2 border-b border-gray-700/50"
+                        className="block text-lg text-gray-300 hover:text-[#14F0F0] active:text-[#14F0F0] transition-colors py-3 px-2 border-b border-gray-700/50 min-h-[44px] flex items-center touch-manipulation"
                         onClick={handleContactClick}
                         tabIndex={isMobileMenuOpen ? 0 : -1}
                       >
@@ -167,7 +177,7 @@ const Header = () => {
                       <Link
                         key={index}
                         to={item.to!}
-                        className="block text-lg text-gray-300 hover:text-[#14F0F0] transition-colors py-2 border-b border-gray-700/50"
+                        className="block text-lg text-gray-300 hover:text-[#14F0F0] active:text-[#14F0F0] transition-colors py-3 px-2 border-b border-gray-700/50 min-h-[44px] flex items-center touch-manipulation"
                         onClick={handleNavClick}
                         tabIndex={isMobileMenuOpen ? 0 : -1}
                       >
@@ -179,7 +189,7 @@ const Header = () => {
 
                 {/* Mobile CTA Button */}
                 <button
-                  className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105 mt-6"
+                  className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-4 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] active:scale-95 transition-all duration-300 mt-6 min-h-[44px] touch-manipulation"
                   onClick={handleContactClick}
                   tabIndex={isMobileMenuOpen ? 0 : -1}
                 >
