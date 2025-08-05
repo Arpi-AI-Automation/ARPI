@@ -98,7 +98,6 @@ const UseCasesPage = () => {
       gradient: 'from-[#14F0F0] to-[#0063FF]',
       ctaText: 'Let\'s Talk About Automating Your Business',
       ctaLink: '#contact'
-    }
     },
     {
       id: 6,
@@ -115,6 +114,7 @@ const UseCasesPage = () => {
       gradient: 'from-[#0063FF] to-[#14F0F0]',
       ctaText: 'Let\'s Talk About Automating Your Business',
       ctaLink: '#contact'
+    }
   ];
 
   const benefits = [
