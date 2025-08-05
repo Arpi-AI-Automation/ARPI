@@ -99,6 +99,22 @@ const UseCasesPage = () => {
       ctaText: 'Let\'s Talk About Automating Your Business',
       ctaLink: '#contact'
     }
+    },
+    {
+      id: 6,
+      emoji: '🧠',
+      title: 'AI Handles Support So You Don\'t Have To',
+      problem: 'Your team is flooded with support calls and emails, most of which are simple updates or repetitive questions.',
+      solution: 'Our AI chat and voice assistants handle support conversations 24/7. They answer questions, guide clients, and escalate only when needed. We also automate email replies and route tickets to the right people.',
+      outcomes: [
+        'Faster client response time',
+        'Fewer missed messages',
+        'Reduced staff burden'
+      ],
+      icon: Brain,
+      gradient: 'from-[#0063FF] to-[#14F0F0]',
+      ctaText: 'Let\'s Talk About Automating Your Business',
+      ctaLink: '#contact'
   ];
 
   const benefits = [
