@@ -12,6 +12,9 @@ import {
   Brain, 
   Settings, 
   Zap,
+  Headphones,
+  Mail,
+  RotateCcw,
   ArrowRight,
   CheckCircle,
   Users,
@@ -104,6 +107,27 @@ const ServicesPage = () => {
       description: 'We handle setup, testing, revisions, integrations, and launch so you don\'t need to worry about the tech.',
       icon: Zap,
       gradient: 'from-[#0063FF] to-[#14F0F0]'
+    }
+  ];
+
+  const supportServices = [
+    {
+      title: 'AI Support Chatbots',
+      description: 'Automated website or SMS-based chatbots that handle FAQs, project updates, appointment changes, and more, instantly.',
+      icon: MessageCircle,
+      gradient: 'from-[#14F0F0] to-[#0063FF]'
+    },
+    {
+      title: 'Voice Support Hotlines',
+      description: 'AI voice agents that answer support calls, provide updates, and escalate when needed, 24/7.',
+      icon: Phone,
+      gradient: 'from-[#0063FF] to-[#14F0F0]'
+    },
+    {
+      title: 'Smart Email & Ticket Routing',
+      description: 'AI-powered email responders that auto-reply, assign tickets, and even resolve common issues without human intervention.',
+      icon: Mail,
+      gradient: 'from-[#14F0F0] to-[#0063FF]'
     }
   ];
 
@@ -208,6 +232,66 @@ const ServicesPage = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Support Automation */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="w-16 h-16 bg-gradient-to-br from-[#14F0F0] to-[#0063FF] rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Headphones className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-4xl font-bold text-[#0B0F26] mb-4">
+              🤝 Customer Support Automation
+            </h2>
+            <p className="text-xl text-gray-600">
+              Smarter support systems that keep your clients happy without draining your team
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {supportServices.map((service, index) => (
+              <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6`}>
+                  <service.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0B0F26] mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-gradient-to-r from-[#14F0F0]/10 to-[#0063FF]/10 border border-[#14F0F0]/30 rounded-2xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-[#0B0F26] mb-6 text-center">
+              Key Outcomes
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="flex items-center space-x-3">
+                <CheckCircle className="w-6 h-6 text-[#14F0F0] flex-shrink-0" />
+                <span className="text-gray-700 font-medium">Instant answers for clients</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <CheckCircle className="w-6 h-6 text-[#14F0F0] flex-shrink-0" />
+                <span className="text-gray-700 font-medium">Less support burnout</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <CheckCircle className="w-6 h-6 text-[#14F0F0] flex-shrink-0" />
+                <span className="text-gray-700 font-medium">Faster resolutions with no extra staff</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a href="#contact" className="group bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">
+              <span>Let's Talk About Automating Your Business</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
         </div>
       </section>
