@@ -77,6 +77,7 @@ const Header = () => {
   const navigationItems = [
     { to: '/services', label: 'Services' },
     { to: '/use-cases', label: 'Use Cases' },
+    { to: '/process', label: 'Our Process' },
     { to: '/methodology', label: 'Methodology' },
     { to: '/technology', label: 'Technology' },
     { to: '/blog', label: 'Blog' },
