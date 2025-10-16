@@ -113,13 +113,13 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
                   Website
                 </label>
                 <input
-                  type="url"
+                  type="text"
                   id="website"
                   name="website"
                   value={formData.website}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#14F0F0] focus:border-transparent transition-all duration-300"
-                  placeholder="https://yourwebsite.com"
+                  placeholder="yourwebsite.com (optional)"
                 />
               </div>
 
