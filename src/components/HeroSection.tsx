@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, TrendingUp, Zap, Target } from 'lucide-react';
+import { ArrowRight, TrendingUp, Zap, Target, Brain, MessageCircle, Mic } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -34,13 +34,6 @@ const HeroSection = () => {
               Built for e-commerce brands running paid traffic.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default HeroSection;
 
           <div className="relative">
             {/* Concept 3: Minimalist Stacked Layers */}
