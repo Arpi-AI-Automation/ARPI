@@ -1,59 +1,40 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import ValueProposition from './components/ValueProposition';
-import ServicesSection from './components/ServicesSection';
-import UseCasesSection from './components/UseCasesSection';
-import ProofSection from './components/ProofSection';
-import CTAStrip from './components/CTAStrip';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
-import MethodologyPage from './components/MethodologyPage';
-import TechnologyPage from './components/TechnologyPage';
-import PrivacyPolicyPage from './components/PrivacyPolicyPage';
-import AboutPage from './components/AboutPage';
-import BlogPage from './components/BlogPage';
-import BlogPost1 from './components/BlogPost1';
-import BlogPost2 from './components/BlogPost2';
-import UseCasesPage from './components/UseCasesPage';
-import ServicesPage from './components/ServicesPage';
-import ProcessPage from './components/ProcessPage';
+import { useEffect } from 'react'
+import Nav from './components/Nav'
+import Hero from './sections/Hero'
+import HowItWorks from './sections/HowItWorks'
+import WhatWeAnalyze from './sections/WhatWeAnalyze'
+import CTA from './sections/CTA'
+import Footer from './components/Footer'
+import './index.css'
 
-const HomePage = () => (
-  <>
-    <Header />
-    <HeroSection />
-    <ValueProposition />
-    <ServicesSection />
-    <UseCasesSection />
-    <ProofSection />
-    <CTAStrip />
-    <ContactSection />
-    <Footer />
-  </>
-);
+export default function App() {
+  useEffect(() => {
+    const reveals = document.querySelectorAll<HTMLElement>('.reveal')
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80)
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.12 }
+    )
+    reveals.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
 
-function App() {
   return (
-    <Router>
-      <div className="min-h-screen">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/methodology" element={<MethodologyPage />} />
-          <Route path="/technology" element={<TechnologyPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/ai-fixes-lead-loss" element={<BlogPost1 />} />
-          <Route path="/blog/ai-followups-close-deals" element={<BlogPost2 />} />
-          <Route path="/use-cases" element={<UseCasesPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/process" element={<ProcessPage />} />
-        </Routes>
-      </div>
-    </Router>
-  );
+    <div className="app">
+      <Nav />
+      <Hero />
+      <div className="full-divider" />
+      <HowItWorks />
+      <div className="full-divider" />
+      <WhatWeAnalyze />
+      <CTA />
+      <Footer />
+    </div>
+  )
 }
-
-export default App;
