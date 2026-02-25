@@ -32,7 +32,7 @@ const UseCasesSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Revenue improvements from fixing conversion friction
-          </h2>
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -58,3 +58,5 @@ const UseCasesSection = () => {
     </section>
   );
 };
+
+export default UseCasesSection;

@@ -67,3 +67,5 @@ const ValueProposition = () => {
     </section>
   );
 };
+
+export default ValueProposition;

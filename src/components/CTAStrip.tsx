@@ -21,3 +21,5 @@ const CTAStrip = () => {
     </section>
   );
 };
+
+export default CTAStrip;

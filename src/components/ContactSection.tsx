@@ -73,7 +73,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We'll analyze your site and identify the top conversion blockers costing you revenue
-          </h2>
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -249,3 +249,5 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
     </section>
   );
 };
+
+export default ContactSection;

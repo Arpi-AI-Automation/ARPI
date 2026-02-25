@@ -38,7 +38,7 @@ const ServicesSection = () => {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Comprehensive revenue friction analysis across four critical areas
-          </h2>
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -68,3 +68,5 @@ const ServicesSection = () => {
     </section>
   );
 };
+
+export default ServicesSection;
