@@ -1,41 +1,46 @@
 import React from 'react';
-import { ArrowRight, Brain, MessageCircle, Mic, TrendingUp } from 'lucide-react';
+import { ArrowRight, TrendingUp, Zap, Target } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-[#0B0F26] overflow-hidden">
-      {/* Minimal Background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-1 h-32 bg-gradient-to-b from-[#14F0F0] to-transparent"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-1 h-24 bg-gradient-to-t from-[#0063FF] to-transparent"></div>
+    <section className="relative min-h-screen bg-[#0B0F26] overflow-hidden flex items-center">
+      {/* Clean Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-20 w-2 h-2 bg-[#14F0F0] rounded-full"></div>
+        <div className="absolute bottom-32 right-32 w-1.5 h-1.5 bg-[#0063FF] rounded-full"></div>
+        <div className="absolute top-1/2 left-10 w-1 h-1 bg-[#14F0F0] rounded-full"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              AI Agents That Work{' '}
-              <span className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] bg-clip-text text-transparent">
-                While You Sleep
-              </span>
-            </h1>
-            
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              We build smart AI systems to automate your calls, chats, emails, and lead capture, 
-              so you can grow without burnout.
-            </p>
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight max-w-5xl mx-auto">
+            Increase Revenue From The Traffic{' '}
+            <span className="bg-gradient-to-r from-[#14F0F0] to-[#0063FF] bg-clip-text text-transparent">
+              You're Already Paying For
+            </span>
+          </h1>
+          
+          <p className="text-xl lg:text-2xl text-gray-300 mb-10 leading-relaxed max-w-4xl mx-auto">
+            We help e-commerce brands identify and fix conversion friction across speed, funnel flow, and tracking — before you scale ad spend.
+          </p>
 
-            <div className="space-y-4">
-              <a href="#contact" className="group bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#14F0F0]/25 inline-flex items-center space-x-2">
-                <span>Get Your Free AI Demo</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              
-              <p className="text-sm text-gray-400">
-                No code. No stress. Just results.
-              </p>
-            </div>
+          <div className="space-y-6">
+            <a href="#contact" className="group bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-10 py-5 rounded-lg font-bold text-xl hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#14F0F0]/25 inline-flex items-center space-x-3">
+              <span>Get Your Revenue Friction Snapshot</span>
+              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            </a>
+            
+            <p className="text-lg text-gray-400 font-medium">
+              Built for e-commerce brands running paid traffic.
+            </p>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
 
           <div className="relative">
             {/* Concept 3: Minimalist Stacked Layers */}

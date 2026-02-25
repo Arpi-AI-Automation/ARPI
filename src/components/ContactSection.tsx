@@ -69,7 +69,10 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#0B0F26] mb-4">
-            Let's Talk About Automating Your Business
+            Get Your Revenue Friction Snapshot
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            We'll analyze your site and identify the top conversion blockers costing you revenue
           </h2>
         </div>
 
@@ -78,7 +81,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-[#0B0F26] mb-2">
-                  Name *
+                  Your Name *
                 </label>
                 <input
                   type="text"
@@ -88,13 +91,13 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#14F0F0] focus:border-transparent transition-all duration-300"
-                  placeholder="Your full name"
+                  placeholder="Your name"
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-semibold text-[#0B0F26] mb-2">
-                  Email *
+                  Business Email *
                 </label>
                 <input
                   type="email"
@@ -104,37 +107,38 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#14F0F0] focus:border-transparent transition-all duration-300"
-                  placeholder="your@email.com"
+                  placeholder="you@yourbrand.com"
                 />
               </div>
 
               <div>
                 <label htmlFor="website" className="block text-sm font-semibold text-[#0B0F26] mb-2">
-                  Website
+                  E-commerce Store URL *
                 </label>
                 <input
                   type="text"
                   id="website"
                   name="website"
+                  required
                   value={formData.website}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#14F0F0] focus:border-transparent transition-all duration-300"
-                  placeholder="yourwebsite.com (optional)"
+                  placeholder="yourstore.com"
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-semibold text-[#0B0F26] mb-2">
-                  Message
+                  Current Monthly Ad Spend (Optional)
                 </label>
-                <textarea
+                <input
+                  type="text"
                   id="message"
                   name="message"
-                  rows={4}
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#14F0F0] focus:border-transparent transition-all duration-300"
-                  placeholder="Tell us about your automation needs..."
+                  placeholder="e.g., $10k/month"
                 />
               </div>
 
@@ -148,7 +152,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
                   className="w-4 h-4 text-[#14F0F0] border-gray-300 rounded focus:ring-[#14F0F0]"
                 />
                 <label htmlFor="wantsConsult" className="ml-2 text-sm text-gray-600">
-                  I want to book a free automation consult
+                  I want to schedule a strategy call after the analysis
                 </label>
               </div>
 
@@ -158,7 +162,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
                 className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
-                <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                <span>{isSubmitting ? 'Analyzing...' : 'Get My Friction Snapshot'}</span>
               </button>
 
               {submitStatus === 'success' && (
@@ -168,10 +172,10 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
                       <Send className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-[#0B0F26] mb-4">
-                      Thank you — we've received your message!
+                      Analysis Request Received!
                     </h3>
                     <p className="text-gray-600 mb-6">
-                      One of our automation specialists will get back to you shortly.
+                      We'll analyze your store and send your friction snapshot within 24 hours.
                     </p>
                     <button
                       onClick={() => setSubmitStatus('idle')}
@@ -186,7 +190,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
               {submitStatus === 'error' && (
                 <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
                   <p className="text-red-800 text-sm">
-                    Sorry, there was an error sending your message. Please try again or contact us directly.
+                    Sorry, there was an error submitting your request. Please try again.
                   </p>
                 </div>
               )}
@@ -194,30 +198,48 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
           </div>
 
           <div className="bg-[#0B0F26] rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-6">Ready to Get Started?</h3>
+            <h3 className="text-2xl font-bold mb-6">What You'll Get</h3>
             
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <Calendar className="w-6 h-6 text-[#14F0F0] mt-1" />
+              <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Book a Free Demo Call</h4>
+                  <h4 className="font-semibold mb-2 flex items-center">
+                    <Target className="w-5 h-5 text-[#14F0F0] mr-2" />
+                    Revenue Friction Analysis
+                  </h4>
                   <p className="text-gray-300 text-sm">
-                    Schedule a 30-minute call to see how AI can transform your business.
+                    Detailed breakdown of what's costing you conversions
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2 flex items-center">
+                    <TrendingUp className="w-5 h-5 text-[#14F0F0] mr-2" />
+                    Priority Fix Recommendations
+                  </h4>
+                  <p className="text-gray-300 text-sm">
+                    Ranked list of highest-impact optimizations
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2 flex items-center">
+                    <Calendar className="w-5 h-5 text-[#14F0F0] mr-2" />
+                    Optional Strategy Call
+                  </h4>
+                  <p className="text-gray-300 text-sm">
+                    30-minute call to discuss implementation
                   </p>
                 </div>
               </div>
 
-              <button className="w-full bg-gradient-to-r from-[#14F0F0] to-[#0063FF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#0063FF] hover:to-[#14F0F0] transition-all duration-300 transform hover:scale-105">
-                <a href="https://calendly.com/arpiai-automation/30min" target="_blank" rel="noopener noreferrer">Schedule Free Demo</a>
-              </button>
-
               <div className="pt-6 border-t border-gray-700">
-                <p className="text-sm text-gray-400 mb-2">What you'll get:</p>
+                <p className="text-sm text-gray-400 mb-2">Delivered within 24 hours:</p>
                 <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Custom AI workflow demo</li>
-                  <li>• ROI analysis for your business</li>
-                  <li>• Implementation roadmap</li>
-                  <li>• No-obligation consultation</li>
+                  <li>• Speed & performance analysis</li>
+                  <li>• Funnel friction identification</li>
+                  <li>• Tracking & attribution review</li>
+                  <li>• Trust signal optimization</li>
                 </ul>
               </div>
             </div>
@@ -227,5 +249,3 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id = "contact" }) => {
     </section>
   );
 };
-
-export default ContactSection;
