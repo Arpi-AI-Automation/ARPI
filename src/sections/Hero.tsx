@@ -1,6 +1,10 @@
 import './Hero.css'
 
-export default function Hero() {
+interface HeroProps {
+  onCtaClick: () => void
+}
+
+export default function Hero({ onCtaClick }: HeroProps) {
   return (
     <div className="hero">
       <div className="hero-bg" />
@@ -20,12 +24,12 @@ export default function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="#contact" className="btn-primary">
+          <button onClick={onCtaClick} className="btn-primary">
             Get Your Revenue Friction Snapshot
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
+          </button>
           <span className="hero-qualifier">
             Built for <strong>Shopify brands</strong> running paid traffic.
           </span>
