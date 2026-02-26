@@ -1,13 +1,16 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Nav from './components/Nav'
 import Hero from './sections/Hero'
 import HowItWorks from './sections/HowItWorks'
 import WhatWeAnalyze from './sections/WhatWeAnalyze'
 import CTA from './sections/CTA'
 import Footer from './components/Footer'
+import ContactModal from './components/ContactModal'
 import './index.css'
 
 export default function App() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   useEffect(() => {
     const reveals = document.querySelectorAll<HTMLElement>('.reveal')
     const observer = new IntersectionObserver(
@@ -27,14 +30,15 @@ export default function App() {
 
   return (
     <div className="app">
-      <Nav />
-      <Hero />
+      <Nav onCtaClick={() => setModalOpen(true)} />
+      <Hero onCtaClick={() => setModalOpen(true)} />
       <div className="full-divider" />
       <HowItWorks />
       <div className="full-divider" />
       <WhatWeAnalyze />
-      <CTA />
+      <CTA onCtaClick={() => setModalOpen(true)} />
       <Footer />
+      <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </div>
   )
 }
