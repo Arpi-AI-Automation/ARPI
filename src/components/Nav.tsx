@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
 import './Nav.css'
 
-export default function Nav() {
+interface NavProps {
+  onCtaClick: () => void
+}
+
+export default function Nav({ onCtaClick }: NavProps) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -20,7 +24,7 @@ export default function Nav() {
         <li><a href="#analyze">Analysis</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" className="nav-cta">Get Your Snapshot</a>
+      <button onClick={onCtaClick} className="nav-cta">Get Your Snapshot</button>
     </nav>
   )
 }
